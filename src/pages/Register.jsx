@@ -16,6 +16,10 @@ function Register() {
     {label:"Commerce" ,value:"Commerce"}  
 
 ]
+const handleCancel=()=>{
+    setUserInput({name:"",address:"",email:"",mobile:"",birth:"",gender:"",course:"",password:""})
+  }
+
 const handleRegister=async(e)=>{
     e.preventDefault()
     const {name,address,email,mobile,birth,gender,course,password}=userInput
@@ -110,7 +114,7 @@ const handleRegister=async(e)=>{
                                         <Link to={'/studentlist'}><button onClick={handleRegister} className='btn btn-success mb-2' style={{ textTransform: ' none' }}>Register</button></Link>
                                     </div>
                                     <div>
-                                        <button className='btn btn-danger mb-2' style={{ textTransform: ' none' }}>Cancel</button>
+                                        <button className='btn btn-danger mb-2' style={{ textTransform: ' none' }} onClick={handleCancel}>Cancel</button>
                                     </div>
 
 
