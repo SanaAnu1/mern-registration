@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+.header,.home,.register{
+  background-image: linear-gradient(to right, #b4034d,rgb(186, 61, 113),rgb(180, 102, 135));
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
